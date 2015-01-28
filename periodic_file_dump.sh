@@ -28,10 +28,10 @@ if [[ !(-f "$FILENAME") ]]; then
 fi
 
 # Check that the sampling period is non-negative
-if [[ $SAMPLE_PERIOD_SEC -le 0 ]]; then
-	echo "Dump period must be a positive number of seconds!"
-	exit 1
-fi
+#if [[ $SAMPLE_PERIOD_SEC -le 0 ]]; then
+#	echo "Dump period must be a positive number of seconds!"
+#	exit 1
+#fi
 
 # Check that the number of samples is positive
 if [[ $NUM_SAMPLES -le 0 ]]; then
